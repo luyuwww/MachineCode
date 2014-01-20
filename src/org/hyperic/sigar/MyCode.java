@@ -21,7 +21,7 @@ public class MyCode {
 			computerInfo += DfClass.getFirstDiskPartitionLength(sigar);
 			computerInfo = getMD5String(computerInfo).toUpperCase();
 			System.out.println(computerInfo);
-			f = new File("./_Machinecode_"+computerInfo+".txt");
+			f = new File("./target/test-classes/_Machinecode_"+computerInfo+".txt");
 			if(!f.exists()){
 				f.createNewFile();
 			}
